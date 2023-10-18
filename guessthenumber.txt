@@ -1,0 +1,50 @@
+import java.util.*;
+class rishav {
+    int number;
+    public rishav(){
+        Random sc= new Random();
+     number=sc.nextInt(100);
+   //System.out.println(number);
+    }
+          /*int user= obj.nextInt();
+       
+       if(number== user){
+           System.out.println("You won ");
+       }
+       else if(number>user){
+           System.out.println("try higher values ");
+       }
+       else if(number<user){
+           System.out.println("try less value");
+}
+}*/
+
+
+    public static void main(String[] args) {
+       rishav sc= new rishav();
+       Scanner obj= new Scanner(System.in);
+       int count=0;
+       int x=10;
+       while(x!=0){
+       System.out.println("enter your user number within 100!!!");
+       //System.out.println(sc.number);
+      int user= obj.nextInt();
+      //for(int i=0;i)
+       //while(user!=0){
+       if(sc.number== user){
+           System.out.println("You won and the  value is"+sc.number);
+           count++;
+           System.out.println("YOU WON THIS GAME IN AT"+  count  + "ATAMPT");
+           break;
+       }
+       else if(sc.number>user){
+           System.out.println("try higher values ");
+           count++;
+       }
+       else if(sc.number<user){
+           System.out.println("try less value");
+       count++;
+    }
+       }
+    }
+}
